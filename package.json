@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "focus-visible": "^5.1.0",
+    "lit-element": "^2.3.1",
+    "lit-html": "^1.2.1"
+  },
+  "devDependencies": {
+    "prettier": "2.0.4",
+    "serve": "^11.3.0",
+    "snowpack": "^1.7.0"
+  },
+  "private": true,
+  "scripts": {
+    "start": "serve --listen 7070 --single",
+    "format": "prettier --check --single-quote --write package.json !modules '**/*.js'",
+    "postinstall": "snowpack"
+  }
+}
