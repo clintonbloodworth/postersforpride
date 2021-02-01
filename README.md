@@ -8,7 +8,8 @@ To check in on Web Components and [Polymer](https://www.polymer-project.org) and
 1. `npm start`
 
 ## Screenshots
-![Screenshot](/assets/screenshot.png?raw=true)
+![Home](/assets/home.png?raw=true)
+![Poster Detail](/assets/poster-detail.png?raw=true)
 
 ## Technologies
 - [LitElement](https://lit-element.polymer-project.org)
