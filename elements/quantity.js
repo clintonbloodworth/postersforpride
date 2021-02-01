@@ -43,9 +43,6 @@ class Quantity extends LitElement {
   set value(value) {
     this.value_ = value;
   }
-  formAssociatedCallback(event) {
-    console.log('form', event, 's');
-  }
   get form() {
     return this.internals_.form;
   }
@@ -58,9 +55,6 @@ class Quantity extends LitElement {
   }
   onInput(event) {
     this.internals_.setFormValue(event.data);
-  }
-  onFormData(event) {
-    console.log('sdfs', event);
   }
   render() {
     return html`

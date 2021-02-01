@@ -121,11 +121,7 @@ class Poster extends LitElement {
     this.dispatchEvent(event);
   }
   onInput(event) {
-    console.log(event, 'input');
     this.quantity = event.data;
-  }
-  onSubmit(event) {
-    console.log('submit');
   }
   onFormData({ formData }) {
     formData.append('quantity', this.quantity);
@@ -180,12 +176,11 @@ class Poster extends LitElement {
             ${this.poster.description}
           </p>
 
-          <form class="form" @formdata="${this.onFormData}" @submit="${this.onSubmit}">
+          <form class="form" @formdata="${this.onFormData}">
             <x-quantity @input="${this.onInput}" value="1"></x-quantity>
 
             <x-button
               label="Add to Cart"
-              @click="${this.onSubmit}"
               type="submit">
             </x-button>
           </form>
